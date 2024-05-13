@@ -1,0 +1,16 @@
+{
+  "name": "unit-testing-js-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "even-or-odd.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.0.3",
+    "mocha": "^10.2.0"
+  }
+}
