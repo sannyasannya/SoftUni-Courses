@@ -1,0 +1,11 @@
+name: Sanya
+age: 32
+address: 
+  street: 2 Ranni List
+  city: Plovdiv
+#isHungry: false
+hobbies:
+ - home automation
+ - reading
+ - running
+ - dancing
