@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TrelloAPIFinalCollection" tests="10" time="5.407">
+  <testsuite name="Get All Boards" id="f8f4d20e-24b6-417d-9559-96fce4ee3146" timestamp="2024-03-19T14:30:19.587Z" tests="3" failures="0" errors="0" time="0.566">
+    <testcase name="Status code is 200" time="0.566" classname="TrelloApiFinalCollection"/>
+    <testcase name="Response time is less than 30 seconds" time="0.566" classname="TrelloApiFinalCollection"/>
+    <testcase name="Response body is not empty" time="0.566" classname="TrelloApiFinalCollection"/>
+  </testsuite>
+  <testsuite name="Create a Board" id="d5745025-23d2-430e-9702-e515494feb95" timestamp="2024-03-19T14:30:19.587Z" tests="2" failures="0" errors="0" time="0.610">
+    <testcase name="Status code is 200" time="0.610" classname="TrelloApiFinalCollection"/>
+    <testcase name="Board name is 'Learning Postman'" time="0.610" classname="TrelloApiFinalCollection"/>
+  </testsuite>
+  <testsuite name="Get Single Board" id="0086f9e8-b595-424f-afa3-cf488757d32b" timestamp="2024-03-19T14:30:19.587Z" tests="2" failures="0" errors="0" time="0.207">
+    <testcase name="Status code is 200" time="0.207" classname="TrelloApiFinalCollection"/>
+    <testcase name="Response body has property 'name' of type string equal to 'Learning Postman'" time="0.207" classname="TrelloApiFinalCollection"/>
+  </testsuite>
+  <testsuite name="Create TO DO list" id="b749be5a-2cfb-48ff-9579-c5cc8b215d99" timestamp="2024-03-19T14:30:19.587Z" tests="4" failures="0" errors="0" time="0.346">
+    <testcase name="Status code is 200" time="0.346" classname="TrelloApiFinalCollection"/>
+    <testcase name="Response has all the expected properties" time="0.346" classname="TrelloApiFinalCollection"/>
+    <testcase name="'closed' is false and of type boolean" time="0.346" classname="TrelloApiFinalCollection"/>
+    <testcase name="'idBoard' matches expected board ID" time="0.346" classname="TrelloApiFinalCollection"/>
+  </testsuite>
+  <testsuite name="Create list with Unique Name" id="96822680-dc5c-4dbb-be50-0ecbd098542e" timestamp="2024-03-19T14:30:19.587Z" tests="2" failures="0" errors="0" time="0.451">
+    <testcase name="Status code is 200" time="0.451" classname="TrelloApiFinalCollection"/>
+    <testcase name="List name matches the unique name used in creation" time="0.451" classname="TrelloApiFinalCollection"/>
+  </testsuite>
+  <testsuite name="Get All Lists from a Board" id="dfa73c3d-61c2-4534-ac6f-1e5d68a2dae4" timestamp="2024-03-19T14:30:19.587Z" tests="4" failures="0" errors="0" time="0.227">
+    <testcase name="Status code is 200" time="0.227" classname="TrelloApiFinalCollection"/>
+    <testcase name="Response array is not empty" time="0.227" classname="TrelloApiFinalCollection"/>
+    <testcase name="Response is an array" time="0.227" classname="TrelloApiFinalCollection"/>
+    <testcase name="List with a specific name is present" time="0.227" classname="TrelloApiFinalCollection"/>
+  </testsuite>
+  <testsuite name="Create Card in TO DO List" id="22f5f73f-f98c-4918-a4e2-faa7a18b57fa" timestamp="2024-03-19T14:30:19.587Z" tests="3" failures="0" errors="0" time="0.496">
+    <testcase name="Status code is 200" time="0.496" classname="TrelloApiFinalCollection"/>
+    <testcase name="Card name is correct" time="0.496" classname="TrelloApiFinalCollection"/>
+    <testcase name="Labels and attachments are empty" time="0.496" classname="TrelloApiFinalCollection"/>
+  </testsuite>
+  <testsuite name="Move Card to List with Unique Name" id="29004676-01ea-4e0f-9b0c-d4c09a6d00ab" timestamp="2024-03-19T14:30:19.587Z" tests="3" failures="0" errors="0" time="0.330">
+    <testcase name="Status code is 200" time="0.330" classname="TrelloApiFinalCollection"/>
+    <testcase name="Card ID is correct" time="0.330" classname="TrelloApiFinalCollection"/>
+    <testcase name="Card is moved to the new list" time="0.330" classname="TrelloApiFinalCollection"/>
+  </testsuite>
+  <testsuite name="Delete Card" id="6f0759ba-c9b3-498b-afc1-293edd6fa216" timestamp="2024-03-19T14:30:19.587Z" tests="3" failures="0" errors="0" time="0.755">
+    <testcase name="Status code is 200" time="0.755" classname="TrelloApiFinalCollection"/>
+    <testcase name="'limits' property exists and is an object" time="0.755" classname="TrelloApiFinalCollection"/>
+    <testcase name="'limits' object is empty" time="0.755" classname="TrelloApiFinalCollection"/>
+  </testsuite>
+  <testsuite name="Delete Board" id="563a6550-67d0-4fdc-bc68-5409d23635b1" timestamp="2024-03-19T14:30:19.587Z" tests="2" failures="0" errors="0" time="1.419">
+    <testcase name="Status code is 200" time="1.419" classname="TrelloApiFinalCollection"/>
+    <testcase name="Response '_value' is null" time="1.419" classname="TrelloApiFinalCollection"/>
+  </testsuite>
+</testsuites>
