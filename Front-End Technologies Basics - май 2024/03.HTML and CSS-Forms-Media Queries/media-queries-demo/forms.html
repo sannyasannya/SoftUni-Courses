@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+</head>
+<body>
+    <form action="server-url" method="post">
+        <fieldset>
+            <legend>Username Information</legend>
+            <label for="username">Username:</label>
+        <input type="text" class="info" id="username" name="username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" class="info" id="password" name="password" placeholder="Your Pass here!">
+        <br>
+        <p>What is your answer?</p>
+        <input type="radio" name="answer" id="answer1"> Yes <br>
+        <input type="radio" name="answer" id="answer2"> No <br>
+        <input type="radio" name="answer" id="answer3"> N/A <br>
+
+        <input type="color" name="color" id="color1" value="red"><br>
+        <input type="email" name="email" id="email" pattern=".+@example\.com" size="60" required><br>
+        <input type="file" name="file" id="file" accept="image/png, image/jpeg"><br>
+        <input type="number" name="number" id="number" min="10" max="50"><br>
+        <textarea cols="50"></textarea><br>
+
+        </fieldset>
+        
+
+        <select name="pets" id="pets-select">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="fish">Fish</option>
+        </select><br>
+
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">Chrome</option>
+            <option value="Edge">Edge</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+
+    </form>
+    
+</body>
+</html>
